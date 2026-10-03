@@ -1,0 +1,17 @@
+{
+  "dataset_name": "peft-llm-2019-2025",
+  "topic": "Parameter-efficient fine-tuning (PEFT) for large language models",
+  "year_start": 2019,
+  "year_end": 2025,
+  "target_count": 70,
+  "queries": [
+    "parameter-efficient fine-tuning language models",
+    "low-rank adaptation fine-tuning",
+    "adapter tuning transformer",
+    "prompt tuning prefix tuning"
+  ],
+  "per_query_limit": 100,
+  "exclude_title_terms": ["survey", "review", "overview", "benchmark suite"],
+  "require_abstract": true,
+  "selection_rule": "Anchor papers (origin papers of methods in the knowledge model) are always included if found; remaining slots are filled by citation count, descending."
+}

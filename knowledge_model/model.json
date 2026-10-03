@@ -1,0 +1,321 @@
+{
+  "_note": "SAMPLE knowledge model for a practice build. In a real submission every entry here must be the author's own decision.",
+  "concepts": [
+    {
+      "id": "low_rank_update",
+      "name": "Low-rank weight update",
+      "aliases": [
+        "low-rank",
+        "low rank"
+      ]
+    },
+    {
+      "id": "quantization",
+      "name": "Quantization",
+      "aliases": [
+        "quantization",
+        "quantized",
+        "4-bit",
+        "4 bit"
+      ]
+    },
+    {
+      "id": "adaptive_rank",
+      "name": "Adaptive rank allocation",
+      "aliases": [
+        "adaptive rank",
+        "rank allocation",
+        "adaptive budget",
+        "adaptive allocation"
+      ]
+    },
+    {
+      "id": "weight_decomposition",
+      "name": "Weight decomposition",
+      "aliases": [
+        "weight decomposition",
+        "weight-decomposed",
+        "magnitude and direction"
+      ]
+    },
+    {
+      "id": "soft_prompt",
+      "name": "Soft / continuous prompts",
+      "aliases": [
+        "soft prompt",
+        "continuous prompt",
+        "soft prompts",
+        "continuous prompts"
+      ]
+    },
+    {
+      "id": "bottleneck_adapter",
+      "name": "Bottleneck adapter module",
+      "aliases": [
+        "bottleneck adapter",
+        "adapter module",
+        "adapter modules",
+        "adapter layer",
+        "adapter layers"
+      ]
+    },
+    {
+      "id": "bias_only_tuning",
+      "name": "Bias-only tuning",
+      "aliases": [
+        "bias-only",
+        "bias terms",
+        "bias only"
+      ]
+    },
+    {
+      "id": "learned_scaling",
+      "name": "Learned activation scaling",
+      "aliases": [
+        "scaling vector",
+        "scaling vectors",
+        "rescaling",
+        "learned scaling"
+      ]
+    },
+    {
+      "id": "shared_random_matrices",
+      "name": "Shared frozen random matrices",
+      "aliases": [
+        "random matrix",
+        "random matrices",
+        "shared random"
+      ]
+    }
+  ],
+  "tasks": [
+    {
+      "id": "text_classification",
+      "name": "Text classification",
+      "aliases": [
+        "text classification",
+        "sentiment analysis"
+      ]
+    },
+    {
+      "id": "summarization",
+      "name": "Summarization",
+      "aliases": [
+        "summarization",
+        "summarisation",
+        "summarize",
+        "summarise"
+      ]
+    },
+    {
+      "id": "question_answering",
+      "name": "Question answering",
+      "aliases": [
+        "question answering",
+        "question-answering"
+      ]
+    },
+    {
+      "id": "instruction_tuning",
+      "name": "Instruction tuning",
+      "aliases": [
+        "instruction tuning",
+        "instruction-tuning",
+        "instruction following",
+        "instruction-following"
+      ]
+    },
+    {
+      "id": "machine_translation",
+      "name": "Machine translation",
+      "aliases": [
+        "machine translation",
+        "neural translation"
+      ]
+    },
+    {
+      "id": "nlu_benchmarks",
+      "name": "Natural language understanding benchmarks",
+      "aliases": [
+        "GLUE",
+        "SuperGLUE",
+        "natural language understanding"
+      ]
+    },
+    {
+      "id": "text_generation",
+      "name": "Text generation",
+      "aliases": [
+        "text generation",
+        "natural language generation",
+        "table-to-text",
+        "data-to-text"
+      ]
+    }
+  ],
+  "methods": [
+    {
+      "id": "lora",
+      "name": "LoRA",
+      "aliases": [
+        "LoRA",
+        "low-rank adaptation"
+      ],
+      "origin_title": "LoRA: Low-Rank Adaptation of Large Language Models",
+      "uses": [
+        "low_rank_update"
+      ]
+    },
+    {
+      "id": "qlora",
+      "name": "QLoRA",
+      "aliases": [
+        "QLoRA"
+      ],
+      "origin_title": "QLoRA: Efficient Finetuning of Quantized LLMs",
+      "uses": [
+        "low_rank_update",
+        "quantization"
+      ]
+    },
+    {
+      "id": "adalora",
+      "name": "AdaLoRA",
+      "aliases": [
+        "AdaLoRA"
+      ],
+      "origin_title": "AdaLoRA: Adaptive Budget Allocation for Parameter-Efficient Fine-Tuning",
+      "uses": [
+        "low_rank_update",
+        "adaptive_rank"
+      ]
+    },
+    {
+      "id": "dora",
+      "name": "DoRA",
+      "aliases": [
+        "DoRA"
+      ],
+      "origin_title": "DoRA: Weight-Decomposed Low-Rank Adaptation",
+      "uses": [
+        "low_rank_update",
+        "weight_decomposition"
+      ]
+    },
+    {
+      "id": "vera",
+      "name": "VeRA",
+      "aliases": [
+        "VeRA"
+      ],
+      "origin_title": "VeRA: Vector-based Random Matrix Adaptation",
+      "uses": [
+        "low_rank_update",
+        "shared_random_matrices"
+      ]
+    },
+    {
+      "id": "adapters",
+      "name": "Adapters",
+      "aliases": [
+        "adapters",
+        "adapter tuning",
+        "adapter-based"
+      ],
+      "origin_title": "Parameter-Efficient Transfer Learning for NLP",
+      "uses": [
+        "bottleneck_adapter"
+      ]
+    },
+    {
+      "id": "prefix_tuning",
+      "name": "Prefix-Tuning",
+      "aliases": [
+        "prefix-tuning",
+        "prefix tuning"
+      ],
+      "origin_title": "Prefix-Tuning: Optimizing Continuous Prompts for Generation",
+      "uses": [
+        "soft_prompt"
+      ]
+    },
+    {
+      "id": "prompt_tuning",
+      "name": "Prompt Tuning",
+      "aliases": [
+        "prompt tuning",
+        "prompt-tuning"
+      ],
+      "origin_title": "The Power of Scale for Parameter-Efficient Prompt Tuning",
+      "uses": [
+        "soft_prompt"
+      ]
+    },
+    {
+      "id": "p_tuning_v2",
+      "name": "P-Tuning v2",
+      "aliases": [
+        "P-Tuning v2"
+      ],
+      "origin_title": "P-Tuning v2: Prompt Tuning Can Be Comparable to Fine-tuning Universally Across Scales and Tasks",
+      "uses": [
+        "soft_prompt"
+      ]
+    },
+    {
+      "id": "bitfit",
+      "name": "BitFit",
+      "aliases": [
+        "BitFit"
+      ],
+      "origin_title": "BitFit: Simple Parameter-efficient Fine-tuning for Transformer-based Masked Language-models",
+      "uses": [
+        "bias_only_tuning"
+      ]
+    },
+    {
+      "id": "ia3",
+      "name": "(IA)3",
+      "aliases": [
+        "(IA)3",
+        "IA3"
+      ],
+      "origin_title": "Few-Shot Parameter-Efficient Fine-Tuning is Better and Cheaper than In-Context Learning",
+      "uses": [
+        "learned_scaling"
+      ]
+    }
+  ],
+  "extends": [
+    {
+      "source": "qlora",
+      "target": "lora",
+      "note": "Applies LoRA on top of a quantized frozen base model."
+    },
+    {
+      "source": "adalora",
+      "target": "lora",
+      "note": "Keeps the low-rank update but reallocates rank across weight matrices."
+    },
+    {
+      "source": "dora",
+      "target": "lora",
+      "note": "Splits the update into magnitude and direction; direction uses LoRA."
+    },
+    {
+      "source": "vera",
+      "target": "lora",
+      "note": "Low-rank update with shared frozen random matrices and trained scaling vectors."
+    },
+    {
+      "source": "prompt_tuning",
+      "target": "prefix_tuning",
+      "note": "Simplifies prefix-tuning to trainable embeddings at the input only."
+    },
+    {
+      "source": "p_tuning_v2",
+      "target": "prefix_tuning",
+      "note": "Applies deep continuous prompts at every layer, as prefix-tuning does."
+    }
+  ]
+}

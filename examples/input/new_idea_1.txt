@@ -1,0 +1,1 @@
+I want to fine-tune a 7B model for summarization by combining 4-bit quantization with a low-rank update whose rank is allocated adaptively across layers.

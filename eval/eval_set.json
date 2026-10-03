@@ -1,0 +1,9 @@
+[
+ {"id":"E1","input":"Fine-tune a 7B model for summarization using 4-bit quantization plus a low-rank update whose rank is allocated adaptively per layer.","expect_status":"ok","expect_top_contains":["method:qlora","method:adalora"]},
+ {"id":"E2","input":"Combine soft prompts with a tiny learned scaling vector for question answering.","expect_status":"ok","expect_top_contains":["method:ia3","method:prompt_tuning"]},
+ {"id":"E3","input":"Freeze all weights and train only the bias terms of the network.","expect_status":"ok","expect_top_contains":["method:bitfit"]},
+ {"id":"E4","input":"Split each weight update into its magnitude and direction components.","expect_status":"ok","expect_top_contains":["method:dora"]},
+ {"id":"E5","input":"A model-predictive controller for quadruped locomotion over rough terrain.","expect_status":"no_relevant_knowledge","expect_top_contains":[]},
+ {"id":"E6","input":"","expect_status":"error","expect_top_contains":[]},
+ {"id":"E7","input":"Adapt a model by training a few extra numbers that factorize the change to each matrix.","expect_status":"no_relevant_knowledge","expect_top_contains":[],"known_limitation":"Paraphrase with no alias match is missed: matching is lexical."}
+]
